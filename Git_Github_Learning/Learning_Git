@@ -1,3 +1,27 @@
-Huzaifa Antule, Currently Pursuing MCA
-In Allana Institute of management Sciences Pune,Pune 411048
-Thankyou.
+Hello There,
+      Thanks for reading this. i'll update git commands here.
+Thanks.
+
+============================================================
+Danger : print("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")
+============================================================
+
+GIT BASICS :
+
+ Working Directory        ---> Your local workstation.  
+ git init                 ---> Initialize Empty Repo.
+ Staging Area             ---> where the files/code are Staged(kind of saved). git commit               ---> Files are Commited (Kind of permenantly saved).
+
+GIT COMMANDS :
+  git clone {URL}          ---> Clones the repository from URL.
+  git pull                 ---> Pulls code/files from Repo.
+  git init                 ---> Initialize Empty Repo.
+  git add .                ---> Adds the files into Staging area. 
+  git status               ---> Lists all new/modified files to be committed.
+  git commit -m "Message"  ---> Commits the changes to local repository.
+  git push origin master   ---> Pushes the commited changes to Original Repo.
+
+
+
+
+
