@@ -1,3 +1,0 @@
-Hello,
-This file is written inside Branch 1.
-This Line is Written Inside Branch 1 with the help of vi.
