@@ -1,3 +1,5 @@
+from os import environ 
+print("ENV Variable Name is : ",environ['Name'])
 print("Hello world")
 print("writing This Code in Windows GitBash and Later Merging with Master")
 
@@ -13,3 +15,9 @@ def Print_Even(Range):
     except Exception as e:
         print("Error : ",e)
 Print_Even(50)
+for i in environ['PATH']:
+    if i ==":":
+        print()
+    else:
+        print(i,end="")
+print()
