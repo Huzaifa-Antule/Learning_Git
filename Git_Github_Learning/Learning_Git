@@ -10,7 +10,10 @@ GIT BASICS :
 
  Working Directory        ---> Your local workstation.  
  git init                 ---> Initialize Empty Repo.
- Staging Area             ---> where the files/code are Staged(kind of saved). git commit               ---> Files are Commited (Kind of permenantly saved).
+ git config --global      ---> user.name or user.email to Configure user.
+ git config --list        ---> To check the configurations.
+ Staging Area             ---> where the files/code are Staged(kind of saved).
+ git commit               ---> Files are Commited (Kind of permenantly saved).
 
 GIT COMMANDS :
   git clone {URL}          ---> Clones the repository from URL.
