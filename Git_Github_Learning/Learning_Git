@@ -14,6 +14,7 @@ GIT BASICS :
  git config --list        ---> To check the configurations.
  Staging Area             ---> where the files/code are Staged(kind of saved).
  git commit               ---> Files are Commited (Kind of permenantly saved).
+ vi .gitignore            ---> To Ignore Unwanted Files in Directory.(Creates hidden file .gitignore)
 
 GIT COMMANDS :
   git clone {URL}          ---> Clones the repository from URL.
@@ -22,8 +23,11 @@ GIT COMMANDS :
   git add .                ---> Adds the files into Staging area. 
   git status               ---> Lists all new/modified files to be committed.
   git commit -m "Message"  ---> Commits the changes to local repository.
-  git push origin master   ---> Pushes the commited changes to Original Repo.
-
+  git push -u origin master---> Pushes the commited changes to Original Repo(-u is optional for user).
+  git log <-1>             ---> Shows Commit logs, -1 or 2 for recent logs.
+  git log --oneline        ---> Shows all commits, In short.
+  git show <id><-1>        ---> Shows Commit Details,by using commit id or -1 or 2 for recent commits.
+  git stash                ---> Used to temporarily Save Uncommitted changes and work on other(list:to show,apply @{}:to Switch,clear). 
 
 
 
