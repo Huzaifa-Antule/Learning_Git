@@ -18,6 +18,7 @@ GIT BASICS :
 
 GIT COMMANDS :
   git clone {URL}          ---> Clones the repository from URL.
+  git add origin {URL}     ---> Adds the origin. 
   git pull                 ---> Pulls code/files from Repo.
   git init                 ---> Initialize Empty Repo.
   git add .                ---> Adds the files into Staging area. 
@@ -27,8 +28,13 @@ GIT COMMANDS :
   git log <-1>             ---> Shows Commit logs, -1 or 2 for recent logs.
   git log --oneline        ---> Shows all commits, In short.
   git show <id><-1>        ---> Shows Commit Details,by using commit id or -1 or 2 for recent commits.
-  git stash                ---> Used to temporarily Save Uncommitted changes and work on other(list:to show,apply @{}:to Switch,clear). 
-
+  git stash                ---> Used to temporarily Save Uncommitted changes and work on other(list:to show,apply @{}:to Switch,clear).  git tag -a <name> -m "Mess" <commit id> --> Use to Tag a Commit.
+  git tag -d <Name>        ---> To Delete a Tag.
+  git clean -n or -f       ---> Clean Unwanted Files, -n for dry run, -f for forcefully.
+  git branch <name>  	   ---> To Create Branch, (without name will show list of Branches.)
+  git checkout <Name>	   ---> To Switch from branches.
+  git merge <Name>	   ---> To Merge branches (You must be in Master or main Branch and resolve conflicts if any).
+  git revert <Commit id>   ---> To Revert From Current Changes and Updates previous state to Current.
 
 
 
