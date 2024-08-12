@@ -1,0 +1,60 @@
+This File will have all the commands that were used while learning Chef.
+-------------------------------
+	    Basics
+-------------------------------
+
+download chef : use wget command to download chef from Official Website.
+Check Installation : which chef or chef --version
+Create a folder named : mkdir cookbooks
+CN - CookBook Name
+RN - Recipe Name
+
+-------------------------------
+	   Commands
+-------------------------------
+
+chef generate cookbook <Name> --> To Create a Cookbook.
+chef generate recipe <c name>/recipes/<Name>  --> To create a recipe.
+chef exec ruby -c <recipe name> --> To Compile recipe, or Check Syntax.
+chef-client -zr "recipe[C Name::R name]" --> To run the recipe, or test recipe.
+node['hostname']  --> Chef Attribute, access system information.
+
+How to run multiple recipes?
+--> We can run Multiple recipes or create runlist by using this command.
+    Note: we cant run multiple recipes from one cookbook.
+    
+    chef-client -zr "recipe[CN:RN],recipe[CN:RN]" 
+
+How to run Multiple recipes from one cookbook??
+--> Yes, we can run multiple recipes from one cookbook by including recipes name in default or in any recipe.
+    Note: you can include multiple recipes in any one recipe or default.
+
+    include_recipe "CN:RN" 
+            .
+  	    .
+
+--------------------------------
+        Server and Nodes
+--------------------------------
+
+* Basic Configuration:
+--> Download Starter Kit from manage.chef.io.
+    upload Kit from windows to VM using WinSCP.
+    mv cookbooks folder in chef-repo/
+
+* To Check if the Workstation is connected to Server:
+--> knife ssl check
+
+* To connect nodes to server:
+
+--> knife bootstrap <private_ ip> --ssh-user ec2-user --sudo -i <VM .pem file> -N <Node Name>
+
+* To create role:
+
+--> cd roles -> vi <rolename.rb> -> define these inside the file : name,description,run_list "recipe[CN]","recipe[CN]"
+    
+    To upload role:
+     knife upload role from file <role.rb file>
+    To Delete Role:
+     knife delete role <role name>
+

@@ -1,0 +1,7 @@
+hostname -> prints hostname
+ipconfig or cat /etc -> prints inform
+yum install,remove,update -> to manage packages
+service start,stop,status -> to manage services
+which -> to check installation
+whoami -> prints current user
+echo -> prints the message
