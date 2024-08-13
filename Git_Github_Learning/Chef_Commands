@@ -45,16 +45,34 @@ How to run Multiple recipes from one cookbook??
 * To Check if the Workstation is connected to Server:
 --> knife ssl check
 
-* To connect nodes to server:
+* To connect nodes to server (Node Management):
 
 --> knife bootstrap <private_ ip> --ssh-user ec2-user --sudo -i <VM .pem file> -N <Node Name>
 
-* To create role:
+   - To list nodes:
+    knife node list
+   - To Delete a node:
+    knife node delete <node name>
+
+* Role Management:
 
 --> cd roles -> vi <rolename.rb> -> define these inside the file : name,description,run_list "recipe[CN]","recipe[CN]"
-    
-    To upload role:
+
+   - To list roles:
+      knife role list
+   - To upload role:
      knife upload role from file <role.rb file>
-    To Delete Role:
+   - To Delete Role:
      knife delete role <role name>
+
+* Cookbook Management:
+--> create a cookbook using "chef cookbook generate <name>" > write recipe using "chef generate recipe <name>"
+
+   - To list Cookbooks:
+      knife cookbook list
+   - To upload cookbook:
+      knife cookbook upload <CN>
+   - To delete:
+      knife cookbook delete <CN>
+   
 
